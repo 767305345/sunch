@@ -2,16 +2,16 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request,'axf/home.html')
+    return render(request,'axf/home.html',{"title":'主页'})
 
 def mine(request):
-    return render(request,'axf/mine.html')
+    return render(request,'axf/mine.html',{"title":'我的'})
 
 def cart(request):
-    return render(request,'axf/cart.html')
+    return render(request,'axf/cart.html',{"title":'购物车'})
 
 def market(request):
-    return render(request,'axf/market.html')
+    return render(request,'axf/market.html',{"title":'商场'})
 
 def base(request):
-    return render(request,'axf/base.html')
+    return render(request,'axf/base.html',{"title":'主页'})

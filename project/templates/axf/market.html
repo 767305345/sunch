@@ -1,6 +1,12 @@
 {% extends 'axf/base.html' %}
 
+{% load static from staticfiles %}
 
+  {% block linkscript %}
+  <link rel="stylesheet" type="text/css" href="{% static 'market/css/market.css' %}"/>
+
+  <script typr="text/javascript" charset="utf-8" src="{% static  'market/js/market.js' %}"></script>
+  {% endblock linkscript %}
  {% block base %}
 <h1>bobo is a good man</h1>
 <h1>market</h1>

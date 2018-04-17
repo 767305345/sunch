@@ -1,4 +1,11 @@
 {% extends 'axf/base.html' %}
+{% load static from staticfiles %}
+
+  {% block linkscript %}
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}"/>
+
+  <script typr="text/javascript" charset="utf-8" src="{% static  'home/js/home.js' %}"></script>
+  {% endblock linkscript %}
 
 
  {% block base %}

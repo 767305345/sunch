@@ -1,29 +1,24 @@
 {% load static from staticfiles %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width",
-    initial-acale="1.0,maximum-scale=1.0,user-scalable=0">
-    <link rel="stylesheet" type="text/css" helf="{%
-static 'main/base/css/base.css"$}>
-     <link rel="stylesheet" type="text/css" helf="{%
-static 'main/base/css/bookstrap.min.css"$}>
-     <link rel="stylesheet" type="text/css" helf="{%
-static 'main/base/css/reset.css"$}>
-     <link rel="stylesheet" type="text/css" helf="{%
-static 'main/base/css/swiper.min.css"$}>
-      <link rel="stylesheet" type="text/css" helf="{%
-static 'main/base/css/base.css"$}>
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width,
+    initial-acale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/base1.css' %}"/>
+     <link rel="stylesheet" type="text/css" href="{% static 'main/css/bookstrap.min.css' %}"/>
+     <link rel="stylesheet" type="text/css" href="{% static 'main/css/reset.css' %}"/>
+     <link rel="stylesheet" type="text/css" href="{% static 'main/css/swiper.min.css' %}"/>
 
-  <script typr="text/javascript" charset="utf-8" scr="{% static
- 'main/js/jquery.min.js" %}></script>
-    <script typr="text/javascript" charset="utf-8" scr="{% static
- 'main/js/swiper.min.js" %}></script>
-     <script typr="text/javascript" charset="utf-8" scr="{% static
- 'main/js/bootstrap.min.js" %}></script>
-      <script typr="text/javascript" charset="utf-8" scr="{% static
- 'main/js/baes.js" %}></script>
+  <script typr="text/javascript" charset="utf-8" src="{% 'static
+ 'main/js/jquery.min.js' %}"></script>
+    <script typr="text/javascript" charset="utf-8" src="{% static
+'main/js/swiper.min.js' %}"></script>
+     <script typr="text/javascript" charset="utf-8" src="{% static
+ 'main/js/bootstrap.min.js' %}"></script>
+      <script typr="text/javascript" charset="utf-8" src="{% static
+ 'main/js/base.js' %}"></script>
 
     {% block linkscript %}
     {% endblock linkscript %}
