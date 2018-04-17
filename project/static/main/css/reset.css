@@ -1,0 +1,44 @@
+@chatset "utf-8"
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+ 2     margin: 0;
+ 3     padding: 0
+ 4 }
+ 5 fieldset,img {
+ 6     border: 0
+ 7 }
+ 8 img {
+ 9     display: block
+10 }
+11 address,caption,cite,code,dfn,th,var {
+12     font-style: normal;
+13     font-weight: normal
+14 }
+15 ul,ol {
+16     list-style: none
+17 }
+18 input {
+19     padding-top: 0;
+20     padding-bottom: 0;
+21     font-family: "SimSun","宋体"
+22 }
+23 input::-moz-focus-inner {
+24     border: 0;
+25     padding: 0
+26 }
+27 select,input {
+28     vertical-align: middle
+29 }
+30 select,input,textarea {
+31     font-size: 12px;
+32     margin: 0
+33 }
+34 input[type="text"],input[type="password"],textarea {
+35     outline-style: none;
+36     -webkit-appearance: none
+37 }
+38 textarea {
+39     resize: none
+40 }
+41 table {
+42     border-collapse: collapse
+43 }
