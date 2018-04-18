@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .models import Whell
 
 # Create your views here.
 def home(request):
-    return render(request,'axf/home.html',{"title":'主页'})
+    whellsList=Whell.objects.all()
+    return render(request,'axf/home.html',{"title":'主页'
+                                                   ,''"whellsList":whellsList})
 
 def mine(request):
     return render(request,'axf/mine.html',{"title":'我的'})

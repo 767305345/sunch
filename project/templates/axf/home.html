@@ -2,13 +2,24 @@
 {% load static from staticfiles %}
 
   {% block linkscript %}
-  <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/home1.css' %}"/>
 
   <script typr="text/javascript" charset="utf-8" src="{% static  'home/js/home.js' %}"></script>
   {% endblock linkscript %}
 
 
  {% block base %}
-<h1>bobo is a good man</h1>
-<h1>home</h1>
+
+ <div>
+    <!-- 轮播 -->
+    <section class="swiper-container" id="top">
+        {% for item in whellsList %}
+           <div class="swiper-slider">
+                 <a href="#"><img src="{{item.img}}"/></a>
+               <a>波波爱你</a>
+           </div>
+        {% endfor %}
+
+    </section>
+</div>
  {% endblock base %}
